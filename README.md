@@ -35,7 +35,7 @@ This derives from WPVideoAudioBasicProcessor and manually averages the stereo au
 
 You'll notice that the processor detects if the sample data is integer or float. When running under the iOS Simulator, the audio data tends to be delivered in integer format. When running on a device, the sample data is in float.
 
-## TestWPAudioProcessorBandPass
+### TestWPAudioProcessorBandPass
 
 This derives from WPViddeoAudioUnitProcessor and sets up a BandPass filter. It includes an accessor function so that the audio unit parameters can be updated while the video is being played.
 
