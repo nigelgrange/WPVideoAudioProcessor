@@ -37,7 +37,9 @@ You'll notice that the processor detects if the sample data is integer or float.
 
 ### TestWPAudioProcessorBandPass
 
-This derives from WPViddeoAudioUnitProcessor and sets up a BandPass filter. It includes an accessor function so that the audio unit parameters can be updated while the video is being played.
+This derives from WPViddeoAudioUnitProcessor and sets up a BandPass AudioUnit. It includes an accessor function so that the audio unit parameters can be updated while the video is being played.
+
+Since Audio Units can only process audio data with samples in float, this audio processor will only function correctly when running on the device - it will not function in the iOS Simulator.
 
 #License
 
